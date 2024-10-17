@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.8" />
+    <PackageReference Include="Shouldly" Version="4.2.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Assessment.Shared\Assessment.Shared.csproj" />
+    <ProjectReference Include="..\TemperatureService.Models\TemperatureService.Shared.csproj" />
+    <ProjectReference Include="..\WeatherSummaryService.Shared\WeatherSummaryService.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
